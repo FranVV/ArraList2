@@ -16,6 +16,9 @@ public class Grupo {
 
     private ArrayList<Alumno> vAlumno;
 
+    /**
+     *
+     */
     public Grupo() {
         this.vAlumno = new ArrayList<>();
     }
@@ -23,7 +26,7 @@ public class Grupo {
     //Decir si un alumno está matriculado en ese grupo
     /**
      * Decir si un alumno está matriculado en ese grupo
-     * @param le paso el npmbre del alumno
+     * @param alumno
      * @return true si esta el alumno y false si no esta
      */
     public boolean alumnomatriculado(String alumno) {
@@ -38,6 +41,7 @@ public class Grupo {
     /**
      * Obtener la mejor nota de los alumnos de la clase: Nota obtenerMejorNota()
      *
+     * @return 
      */
     public double mejorNota() {
         double contador = 0;
@@ -57,6 +61,7 @@ public class Grupo {
     /**
      * Calcular el número de suspensos que ha habido en ese grupo
      *
+     * @return 
      */
     public int numSuspensos() {
         int contador = 0;
@@ -84,6 +89,7 @@ public class Grupo {
      * Borrar a un alumno del grupo
      *
      * @param alumno le paso el nombre
+     * @return 
      */
     public boolean borrarAlumno(String alumno) {
         int a = vAlumno.indexOf(alumno);
@@ -98,7 +104,7 @@ public class Grupo {
     /**
      * Poner la nota a un alumno en un módulo determinado
      *
-     * @param le paso el nombre de un alumno
+     * @param nombreAlumno
      * @param nombreModulo le paso el modulo al quepertenece el amluno
      */
     public void ponerNotaAlumno(String nombreAlumno, String nombreModulo) {
@@ -115,6 +121,7 @@ public class Grupo {
      *
      * @param nomAlum le paso el nombre del alumno
      * @param nomModulos le paso un vector de strin de modulos
+     * @return 
      */
     public boolean matricularAlunoaunModulo(String nomAlum, String[] nomModulos) {
         ArrayList<Nota> a = null;
